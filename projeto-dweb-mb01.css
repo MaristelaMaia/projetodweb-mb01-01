@@ -1,0 +1,14 @@
+#logo-navbar {
+  height: 150px;
+}
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4 rem;
+  height: 4 rem;
+  margin-bottom: 1 rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 0.75 rem;
+}
