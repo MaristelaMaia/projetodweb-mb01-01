@@ -6,6 +6,7 @@
       -->
     <link href="assets\css\bootstrap.min.css" rel="stylesheet">
     <!-- Link para utilizar o bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     
     <!-- Latest compiled JavaScript -->
     <script src="assets\js\bootstrap.bundle.min.js"></script>
@@ -20,99 +21,101 @@
 <!-- comentário -->
 
 <body>
-    <header>
-      <div class="px-3 py-2 bg-dark text-white">
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-              <img src="assets\img\Desen-Volvo-escura.gif" id="logo-navbar" alt="Desen-Volvo-1-ultimo" border="0">
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a href="#" class="nav-link text-secondary">
-                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                      <use xlink:href="#home"></use>
-                    </svg>
-                  </a>
-                </li>
-  
-              </ul>
-            </a>
-  
+  <header>
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img src="assets\img\Desen-Volvo-escura.gif" id="logo-navbar" alt="Desen-Volvo-1-ultimo" border="0">
             <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
               <li>
+                <!-- o # vai sumir, o svg mantém e está dentro da tag "a href", vai substituir cada # pela página que quer, copie o caminho relativo e cole ou escreva o nome do caminho / depois copie o header todo e substitui nos demais.-->
                 <a href="#" class="nav-link text-secondary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                    class="bi bi-house d-block mx-auto mb-1" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                    <path fill-rule="evenodd"
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                    <use xlink:href="#home"></use>
                   </svg>
-                  Início
                 </a>
               </li>
-  
-              <li>
-                <a href="#" class="nav-link text-white">
-  
-                  <svg class="bi d-block mx-auto mb-1" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path
-                      d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
-                  </svg>
-                  </svg>
-                  Sobre mim
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-briefcase d-block mx-auto mb-1" viewBox="0 0 16 16">
-                    <path
-                      d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                  </svg>
-                  Serviços
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-gem d-block mx-auto mb-1" viewBox="0 0 16 16">
-                    <path
-                      d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
-                  </svg>
-                  Portifólio
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-telephone d-block mx-auto mb-1" viewBox="0 0 16 16">
-                    <path
-                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                  </svg>
-                  Contato
-                </a>
-              </li>
+
             </ul>
-          </div>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="home.html" class="nav-link text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                  class="bi bi-house d-block mx-auto mb-1" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                  <path fill-rule="evenodd"
+                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                Início
+              </a>
+            </li>
+
+            <li>
+              <a href="Aboutme.html" class="nav-link text-white">
+
+                <svg class="bi d-block mx-auto mb-1" width="32" height="32" xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
+                </svg>
+                </svg>
+                Sobre mim
+              </a>
+            </li>
+            <li>
+              <a href="servicos.html" class="nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-briefcase d-block mx-auto mb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                </svg>
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="portifolio.html" class="nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-gem d-block mx-auto mb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z" />
+                </svg>
+                Portifólio
+              </a>
+            </li>
+            <li>
+              <a href="contato.html" class="nav-link text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-telephone d-block mx-auto mb-1" viewBox="0 0 16 16">
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                Contato
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="px-3 py-2 border-bottom mb-3">
-        <div class="container d-flex flex-wrap justify-content-center">
-          <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-          </form>
-  
-          <div class="text-end">
-            <button type="button" class="btn btn-light text-dark me-2">Login</button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
-          </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-light text-dark me-2">Login</button>
+          <button type="button" class="btn btn-primary">Sign-up</button>
         </div>
       </div>
-       
-    </header>
+    </div>
+     
+  </header>
+
   <!-- Aqui vai o codigo da pagina -->
   
     <footer>
